@@ -1,12 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import ExampleComponent from 'react-trap'
+import Trap from 'react-trap';
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <Trap event="click mouseover">
+          {
+            (trapped, ref) => (
+              <div ref={ref}>{trapped ? "In" : "Out"}</div>
+            )
+          }
+        </Trap>
       </div>
     )
   }

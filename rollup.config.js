@@ -3,9 +3,12 @@ import commonjs from 'rollup-plugin-commonjs'
 import external from 'rollup-plugin-peer-deps-external'
 import postcss from 'rollup-plugin-postcss'
 import resolve from 'rollup-plugin-node-resolve'
+import alias from 'rollup-plugin-alias';
 import url from 'rollup-plugin-url'
 
 import pkg from './package.json'
+
+import libName from './libName';
 
 export default {
   input: 'src/index.js',
@@ -22,6 +25,9 @@ export default {
     }
   ],
   plugins: [
+    alias({
+      [pkg.name]: `./src/index.js`
+    }),
     external(),
     postcss({
       modules: true
@@ -29,7 +35,7 @@ export default {
     url(),
     babel({
       exclude: 'node_modules/**',
-      plugins: [ 'external-helpers' ]
+      plugins: ['@babel/external-helpers']
     }),
     resolve(),
     commonjs()

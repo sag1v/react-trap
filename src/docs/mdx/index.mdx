@@ -1,0 +1,32 @@
+---
+name: Getting started
+route: /
+---
+
+import {Playground, PropsTable } from 'docz';
+import Trap from 'react-trap';
+import Box from '../components/Box';
+
+# Getting started
+
+## Install
+
+```
+npm install react-trap
+```
+## Import
+```
+import Trap from 'react-trap'
+```
+
+## Usage 
+
+<Playground >
+  <Trap event="click">
+    {(trapped, ref) => <Box innerRef={ref} isFocused={trapped} />}
+  </Trap>
+</Playground>
+
+## Props
+
+<PropsTable of={Trap} />

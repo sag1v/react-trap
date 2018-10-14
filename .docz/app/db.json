@@ -1,0 +1,89 @@
+{
+  "config": {
+    "title": "react-trap",
+    "description": "Detect dom events inside or outside an element",
+    "themeConfig": {
+      "mode": "light",
+      "codemirrorTheme": "dracula",
+      "styles": {
+        "body": {
+          "fontFamily": "'Source Sans Pro', Helvetica, sans-serif",
+          "fontSize": 16,
+          "lineHeight": 1.6
+        },
+        "container": {
+          "width": "100%",
+          "padding": [
+            "20px 40px"
+          ]
+        }
+      }
+    },
+    "menu": [],
+    "ordering": "ascending",
+    "version": "1.0.0",
+    "repository": "https://github.com/sag1v/react-trap",
+    "native": false,
+    "src": "./src/docs",
+    "dest": "./demo",
+    "port": 8888,
+    "hashRouter": true,
+    "base": "/react-trap/",
+    "htmlContext": {
+      "head": {
+        "scripts": [
+          {
+            "async": "async",
+            "src": "https://www.googletagmanager.com/gtag/js?id=UA-127217040-1"
+          }
+        ],
+        "raw": "<script>\n              window.dataLayer = window.dataLayer || [];\n              function gtag(){dataLayer.push(arguments);}\n              gtag('js', new Date());\n              gtag('config', 'UA-127217040-1');\n            </script>",
+        "links": [
+          {
+            "rel": "stylesheet",
+            "href": "//codemirror.net/theme/dracula.css"
+          }
+        ]
+      }
+    }
+  },
+  "entries": {
+    "mdx/index.mdx": {
+      "name": "Getting started",
+      "route": "/",
+      "id": "feecdcc77eed3427ff64d13decdfea87",
+      "filepath": "mdx/index.mdx",
+      "link": "https://github.com/sag1v/react-trap\\edit\\master\\src\\docs\\mdx/index.mdx",
+      "slug": "mdx-index",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "getting-started",
+          "value": "Getting started"
+        },
+        {
+          "depth": 2,
+          "slug": "install",
+          "value": "Install"
+        },
+        {
+          "depth": 2,
+          "slug": "import",
+          "value": "Import"
+        },
+        {
+          "depth": 2,
+          "slug": "usage",
+          "value": "Usage"
+        },
+        {
+          "depth": 2,
+          "slug": "props",
+          "value": "Props"
+        }
+      ]
+    }
+  }
+}
