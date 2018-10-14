@@ -84,5 +84,21 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "outside-click",
+    "click-outside",
+    "react-click-outside",
+    "HOC",
+    "onclickoutside",
+    "trap",
+    "click",
+    "react",
+    "document",
+    "browser",
+    "dom",
+    "outside",
+    "external-click",
+    "onOutSide"
   ]
 }
