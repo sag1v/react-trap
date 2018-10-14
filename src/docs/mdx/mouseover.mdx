@@ -1,0 +1,20 @@
+---
+name: event
+order: 2
+route: /event
+menu: Examples
+---
+
+import {Playground } from 'docz';
+import Trap from 'react-trap';
+import Box from '../components/Box';
+
+# event
+
+#### You can provide any valid [DOM event](https://developer.mozilla.org/en-US/docs/Web/Events).
+
+<Playground >
+  <Trap event="mouseover">
+    {(trapped, ref) => <Box innerRef={ref} isFocused={trapped} />}
+  </Trap>
+</Playground>

@@ -1,6 +1,6 @@
 {
   "name": "react-trap",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Detect dom events inside or outside an element",
   "author": "sag1v",
   "license": "MIT",

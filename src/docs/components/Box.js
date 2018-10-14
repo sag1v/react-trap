@@ -6,7 +6,9 @@ const style = isFocused => ({
   padding: "25px",
   justifyContent: "center",
   color: "#fff",
-  backgroundColor: isFocused ? "#4caf50" : "#e91e63"
+  backgroundColor: isFocused ? "#4caf50" : "#e91e63",
+  userSelect: "none",
+  cursor: "pointer"
 });
 
 const Box = ({ isFocused, innerRef }) => (

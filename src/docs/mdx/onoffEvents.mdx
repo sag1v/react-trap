@@ -1,0 +1,20 @@
+---
+name: on & off
+order: 3
+route: /onoff
+menu: Examples
+---
+
+import {Playground } from 'docz';
+import Trap from 'react-trap';
+import Box from '../components/Box';
+
+# on & off
+
+#### You can provide different events for on and off focus. In this example we will trigger the trap only with the `dblclick` event and invert it with the `click` event.
+
+<Playground >
+  <Trap on="dblclick" off="click">
+    {(trapped, ref) => <Box innerRef={ref} isFocused={trapped} />}
+  </Trap>
+</Playground>

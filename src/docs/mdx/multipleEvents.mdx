@@ -1,0 +1,21 @@
+---
+name: multiple events
+order: 4
+route: /multipleEvents
+menu: Examples
+---
+
+import {Playground } from 'docz';
+import Trap from 'react-trap';
+import Box from '../components/Box';
+
+# multiple events
+
+#### You can multiple events to the `event`, `on` and `off` props, just pass a string with events seperated by spaces.
+Click on the left or right mouse button
+
+<Playground >
+  <Trap event="click contextmenu">
+    {(trapped, ref) => <Box innerRef={ref} isFocused={trapped} />}
+  </Trap>
+</Playground>
