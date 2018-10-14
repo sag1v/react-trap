@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/react-trap.svg)](https://www.npmjs.com/package/react-trap) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## [Live Demo, playground & DOCS](https://sag1v.github.io/react-trap/)
+
 ## Install
 
 ```bash
@@ -13,14 +15,21 @@ npm install --save react-trap
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
+import Trap from 'react-trap'
 
-import MyComponent from 'react-trap'
-
-class Example extends Component {
+class App extends React.Component {
   render () {
     return (
-      <MyComponent />
+      <Trap event="click">
+        {
+          (trapped, ref) => (
+            <div ref={ref}>
+              {trapped ? "I'm focused" : "I'm out of focus"}
+            </div>
+          )
+        }
+      </Trap>
     )
   }
 }
