@@ -24,14 +24,15 @@ export default {
       scripts: [
         {
           async: 'async',
-          src: 'https://www.googletagmanager.com/gtag/js?id=UA-127217040-1'
+          src: 'https://www.googletagmanager.com/gtag/js?id=UA-127716054-1'
         }
       ],
-    raw:   `<script>
+      raw: `<script>
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'UA-127217040-1');
+            
+              gtag('config', 'UA-127716054-1');
             </script>`,
       links: [{
         rel: 'stylesheet',
