@@ -1,17 +1,27 @@
 import { Component } from "react";
 import PropTypes from "prop-types";
 import invariant from "invariant";
+import { asArray } from "../../helpers";
 
 class Trap extends Component {
   static propTypes = {
     /** children as function: (trapped, ref) => <YourComponent ... /> */
     children: PropTypes.func.isRequired,
     /** DOM event to habdle both in and out events */
-    event: PropTypes.string,
+    event: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.arrayOf(PropTypes.string)
+    ]),
     /** DOM event just for the focus, working in combination with the off prop  */
-    on: PropTypes.string,
+    on: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.arrayOf(PropTypes.string)
+    ]),
     /** DOM event just for the blur, working in combination with the on prop  */
-    off: PropTypes.string,
+    off: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.arrayOf(PropTypes.string)
+    ]),
     /** This will prevent the default (only if the state has changed) */
     preventDefault: PropTypes.bool
   };
@@ -34,18 +44,18 @@ class Trap extends Component {
       "A ref is required, did you forgot to use it?"
     );
     if (on && off) {
-      on.split(" ").forEach(evt => {
+      asArray(on).forEach(evt => {
         document.addEventListener(evt, this.handleFocusEvent, {
           detail: { reactTrap: true }
         });
       });
-      off.split(" ").forEach(evt => {
+      asArray(off).forEach(evt => {
         document.addEventListener(evt, this.handleBlurEvent, {
           detail: { reactTrap: true }
         });
       });
     } else {
-      event.split(" ").forEach(evt => {
+      asArray(event).forEach(evt => {
         document.addEventListener(evt, this.handleEvent, {
           detail: { reactTrap: true }
         });
@@ -57,14 +67,14 @@ class Trap extends Component {
     const { event, on, off } = this.props;
 
     if (on && off) {
-      on.split(" ").forEach(evt => {
+      asArray(on).forEach(evt => {
         document.removeEventListener(evt, this.handleFocusEvent);
       });
-      off.split(" ").forEach(evt => {
+      asArray(off).forEach(evt => {
         document.removeEventListener(evt, this.handleBlurEvent);
       });
     } else {
-      event.split(" ").forEach(evt => {
+      asArray(event).forEach(evt => {
         document.removeEventListener(evt, this.handleEvent);
       });
     }

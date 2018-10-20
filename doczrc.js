@@ -10,7 +10,19 @@ export default {
   port: 8888,
   hashRouter: true,
   base: `/${libName}/`,
-  ordering: "ascending",
+  menu: [
+    "Getting started",
+    {
+      name: 'Examples',
+      menu: [
+        'event',
+        'ref',
+        'on & off',
+        'multiple events',
+        'preventDefault'
+      ]
+    }
+  ],
   description: pkg.description,
   modifyBundlerConfig: config => {
     config.resolve.alias = {

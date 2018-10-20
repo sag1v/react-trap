@@ -1,8 +1,7 @@
 ---
 name: multiple events
-order: 4
 route: /multipleEvents
-menu: Examples
+menu: 'Examples'
 ---
 
 import {Playground } from 'docz';
@@ -11,11 +10,13 @@ import Box from '../components/Box';
 
 # multiple events
 
-#### You can multiple events to the `event`, `on` and `off` props, just pass a string with events seperated by spaces.
-Click on the left or right mouse button
+#### You can pass multiple events to the `event`, `on` and `off` props, just pass a string with events seperated by spaces.
+In this example we are passing both `dblclick` and `contextmenu` events to the `event` prop.  
+This means we will trigger the focus when either the lement gets a double click or a context menu (right click on desktop or long press on mobile).
 
+*You can use it with `on` & `off` props as well.*
 <Playground >
-  <Trap event="click contextmenu">
+  <Trap event={["dblclick", "contextmenu"]}>
     {(trapped, ref) => <Box innerRef={ref} isFocused={trapped} />}
   </Trap>
 </Playground>

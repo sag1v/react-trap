@@ -1,8 +1,7 @@
 ---
 name: preventDefault
-order: 3
-route: /preventDefault
-menu: Examples
+route: '/preventDefault'
+menu: 'Examples'
 ---
 
 import {Playground } from 'docz';
@@ -13,7 +12,9 @@ import Box from '../components/Box';
 
 #### You can pass `preventDefault` and prevent the default behaviour of the browser. This will prevent the default only if the state has changed, this way we are not over taking other event listeners
 
-In this example we are hooking to the `contextmenu` event (usually the right mouse button) but we will prevent it from opening the context menu (only if state has changed).
+In this example we are hooking to the `contextmenu` event (usually the right mouse button) 
+but we will prevent it from opening the context menu (only if state has changed).
+So in other words, for the first event it will prevent the default but not for the second event
 <Playground >
   <Trap event="contextmenu" preventDefault>
     {(trapped, ref) => <Box innerRef={ref} isFocused={trapped} />}

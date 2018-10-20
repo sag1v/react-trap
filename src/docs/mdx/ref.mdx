@@ -1,0 +1,34 @@
+---
+name: ref
+route: '/ref'
+menu: 'Examples'
+---
+
+import {Playground } from 'docz';
+import Trap from 'react-trap';
+import Box from '../components/Box';
+
+# ref
+
+#### You will need to use the `ref` callback provided by `react-trap`.
+
+For example, this is how the `<Box />` example is using `react-trap`:
+```jsx
+const Box = ({ isFocused, innerRef }) => (
+  <div ref={innerRef}>
+    {isFocused ? "I'm focused" : "I'm out of focus"}
+  </div>
+);
+```
+
+<Playground >
+  <Trap event="mouseover">
+    {(trapped, ref) => <Box innerRef={ref} isFocused={trapped} />}
+  </Trap>
+</Playground>
+
+### Why do we must use a `ref` prop?
+We could of wrapped the `children` with a DOM node like a `div` but we don't want to add unnecessary junk to the DOM.
+We could also use the `findDOMNode` API but [it will get deprecated on future versions of react](https://github.com/facebook/react/pull/13841).  
+
+There is a plan for [supporting refs with `React.Fragment`](https://github.com/facebook/react/pull/13841#issuecomment-430066195) and when this will released we will probably change our API and the ref won't be mandatory.
