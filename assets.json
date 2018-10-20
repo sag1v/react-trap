@@ -1,11 +1,12 @@
 {
-  "vendors.js": "/react-trap/static/js/vendors.5303f4eb.js",
-  "app.js": "/react-trap/static/js/app.8a6fdff6.js",
+  "vendors.js": "/react-trap/static/js/vendors.e0be5e8b.js",
+  "app.js": "/react-trap/static/js/app.c993db76.js",
   "mdx-index.js": "/react-trap/static/js/mdx-index.807ce5f3.js",
-  "mdx-mouseover.js": "/react-trap/static/js/mdx-mouseover.05cd0e0e.js",
-  "mdx-onoff-events.js": "/react-trap/static/js/mdx-onoff-events.7c06ef27.js",
-  "mdx-multiple-events.js": "/react-trap/static/js/mdx-multiple-events.da871c70.js",
-  "mdx-prevent-default.js": "/react-trap/static/js/mdx-prevent-default.df1629f3.js",
-  "runtime~app.js": "/react-trap/static/js/runtime~app.8fe07dfb394c855261f1.js",
+  "mdx-event.js": "/react-trap/static/js/mdx-event.952825b1.js",
+  "mdx-multiple-events.js": "/react-trap/static/js/mdx-multiple-events.cb1ecd37.js",
+  "mdx-onoff-events.js": "/react-trap/static/js/mdx-onoff-events.ca95a39b.js",
+  "mdx-prevent-default.js": "/react-trap/static/js/mdx-prevent-default.8c5625eb.js",
+  "mdx-ref.js": "/react-trap/static/js/mdx-ref.64d88c32.js",
+  "runtime~app.js": "/react-trap/static/js/runtime~app.f1f1d60ec176ca5822ae.js",
   "index.html": "/react-trap/index.html"
 }
