@@ -1,6 +1,6 @@
 {
   "name": "react-trap",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Detect dom events inside or outside an element",
   "author": "sag1v",
   "license": "MIT",
@@ -86,6 +86,7 @@
     "dist"
   ],
   "keywords": [
+    "useTrap",
     "outside-click",
     "click-outside",
     "react-click-outside",
@@ -94,6 +95,7 @@
     "trap",
     "click",
     "react",
+    "hooks",
     "document",
     "browser",
     "dom",
