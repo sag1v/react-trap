@@ -5,6 +5,7 @@ route: '/'
 
 import {Playground, PropsTable } from 'docz';
 import Trap from 'react-trap';
+import PropTypesDisplay from '../../components/PropTypesDisplay'
 import Box from '../components/Box';
 
 # Getting started
@@ -18,6 +19,10 @@ npm install react-trap
 ```
 import Trap from 'react-trap'
 ```
+Or `useTrap` hook
+```
+import { useTrap } from 'react-trap'
+```
 
 ## Usage 
 
@@ -29,4 +34,24 @@ import Trap from 'react-trap'
 
 ## Props
 
-<PropsTable of={Trap} />
+<PropsTable of={PropTypesDisplay} />
+
+## How is Box looks like?
+
+```
+const style = isFocused => ({
+  display: "flex",
+  padding: "25px",
+  justifyContent: "center",
+  color: "#fff",
+  backgroundColor: isFocused ? "#4caf50" : "#e91e63",
+  userSelect: "none",
+  cursor: "pointer"
+});
+
+const Box = ({ isFocused, innerRef }) => (
+  <div ref={innerRef} style={style(isFocused)}>
+    {isFocused ? "I'm focused" : "I'm out of focus"}
+  </div>
+);
+```

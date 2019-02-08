@@ -2,8 +2,28 @@
   "config": {
     "title": "react-trap",
     "description": "Detect dom events inside or outside an element",
+    "menu": [
+      "Getting started",
+      {
+        "name": "Examples",
+        "menu": [
+          "event",
+          "ref",
+          "useTrap (hooks)",
+          "on & off",
+          "multiple events",
+          "preventDefault"
+        ]
+      }
+    ],
+    "ordering": "descending",
+    "version": "1.1.0",
+    "repository": "https://github.com/sag1v/react-trap",
+    "native": false,
+    "codeSandbox": true,
     "themeConfig": {
       "mode": "light",
+      "showPlaygroundEditor": true,
       "codemirrorTheme": "dracula",
       "styles": {
         "body": {
@@ -19,23 +39,6 @@
         }
       }
     },
-    "menu": [
-      "Getting started",
-      {
-        "name": "Examples",
-        "menu": [
-          "event",
-          "ref",
-          "on & off",
-          "multiple events",
-          "preventDefault"
-        ]
-      }
-    ],
-    "ordering": "descending",
-    "version": "1.0.2",
-    "repository": "https://github.com/sag1v/react-trap",
-    "native": false,
     "src": "./src/docs",
     "dest": "./demo",
     "port": 8888,
@@ -60,6 +63,28 @@
     }
   },
   "entries": {
+    "mdx/event.mdx": {
+      "name": "event",
+      "route": "/event",
+      "menu": "Examples",
+      "id": "069d0e1b9e7f447c7cc0a25c780825fe",
+      "filepath": "mdx/event.mdx",
+      "link": "https://github.com/sag1v/react-trap\\edit\\master\\src\\docs\\mdx/event.mdx",
+      "slug": "mdx-event",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "event",
+          "value": "event"
+        },
+        {
+          "depth": 4,
+          "slug": "you-can-provide-any-valid-dom-event",
+          "value": "You can provide any valid  DOM event ."
+        }
+      ]
+    },
     "mdx/index.mdx": {
       "name": "Getting started",
       "route": "/",
@@ -94,28 +119,11 @@
           "depth": 2,
           "slug": "props",
           "value": "Props"
-        }
-      ]
-    },
-    "mdx/event.mdx": {
-      "name": "event",
-      "route": "/event",
-      "menu": "Examples",
-      "id": "069d0e1b9e7f447c7cc0a25c780825fe",
-      "filepath": "mdx/event.mdx",
-      "link": "https://github.com/sag1v/react-trap\\edit\\master\\src\\docs\\mdx/event.mdx",
-      "slug": "mdx-event",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "event",
-          "value": "event"
         },
         {
-          "depth": 4,
-          "slug": "you-can-provide-any-valid-dom-event",
-          "value": "You can provide any valid  DOM event ."
+          "depth": 2,
+          "slug": "how-is-box-looks-like",
+          "value": "How is Box looks like?"
         }
       ]
     },
@@ -141,28 +149,6 @@
         }
       ]
     },
-    "mdx/onoffEvents.mdx": {
-      "name": "on & off",
-      "route": "/onoff",
-      "menu": "Examples",
-      "id": "7608ac7618c19ec50004a357c7b4ae6d",
-      "filepath": "mdx/onoffEvents.mdx",
-      "link": "https://github.com/sag1v/react-trap\\edit\\master\\src\\docs\\mdx/onoffEvents.mdx",
-      "slug": "mdx-onoff-events",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "on--off",
-          "value": "on & off"
-        },
-        {
-          "depth": 4,
-          "slug": "you-can-provide-different-events-for-on-and-off-focus-in-this-example-we-will-trigger-the-trap-only-with-the-dblclick-event-and-invert-it-with-the-click-event",
-          "value": "You can provide different events for on and off focus. In this example we will trigger the trap only with the  dblclick  event and invert it with the  click  event."
-        }
-      ]
-    },
     "mdx/preventDefault.mdx": {
       "name": "preventDefault",
       "route": "/preventDefault",
@@ -182,6 +168,28 @@
           "depth": 4,
           "slug": "you-can-pass-preventdefault-and-prevent-the-default-behaviour-of-the-browser-this-will-prevent-the-default-only-if-the-state-has-changed-this-way-we-are-not-over-taking-other-event-listeners",
           "value": "You can pass  preventDefault  and prevent the default behaviour of the browser. This will prevent the default only if the state has changed, this way we are not over taking other event listeners"
+        }
+      ]
+    },
+    "mdx/onoffEvents.mdx": {
+      "name": "on & off",
+      "route": "/onoff",
+      "menu": "Examples",
+      "id": "7608ac7618c19ec50004a357c7b4ae6d",
+      "filepath": "mdx/onoffEvents.mdx",
+      "link": "https://github.com/sag1v/react-trap\\edit\\master\\src\\docs\\mdx/onoffEvents.mdx",
+      "slug": "mdx-onoff-events",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "on--off",
+          "value": "on & off"
+        },
+        {
+          "depth": 4,
+          "slug": "you-can-provide-different-events-for-on-and-off-focus-in-this-example-we-will-trigger-the-trap-only-with-the-dblclick-event-and-invert-it-with-the-click-event",
+          "value": "You can provide different events for on and off focus. In this example we will trigger the trap only with the  dblclick  event and invert it with the  click  event."
         }
       ]
     },
@@ -209,6 +217,28 @@
           "depth": 3,
           "slug": "why-do-we-must-use-a-ref-prop",
           "value": "Why do we must use a  ref  prop?"
+        }
+      ]
+    },
+    "mdx/useTrap.mdx": {
+      "name": "useTrap (hooks)",
+      "route": "/useTrap",
+      "menu": "Examples",
+      "id": "cab47486565128a2032e13e2cffa8570",
+      "filepath": "mdx/useTrap.mdx",
+      "link": "https://github.com/sag1v/react-trap\\edit\\master\\src\\docs\\mdx/useTrap.mdx",
+      "slug": "mdx-use-trap",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "event",
+          "value": "event"
+        },
+        {
+          "depth": 4,
+          "slug": "you-can-provide-any-valid-dom-event",
+          "value": "You can provide any valid  DOM event ."
         }
       ]
     }

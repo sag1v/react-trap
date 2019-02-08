@@ -17,6 +17,7 @@ export default {
       menu: [
         'event',
         'ref',
+        'useTrap (hooks)',
         'on & off',
         'multiple events',
         'preventDefault'
@@ -54,6 +55,7 @@ export default {
   },
   themeConfig: {
     mode: 'light',
+    showPlaygroundEditor: true,
     codemirrorTheme: 'dracula',
     styles: {
       body: {

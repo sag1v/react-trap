@@ -1,0 +1,36 @@
+---
+name: useTrap (hooks)
+route: '/useTrap'
+menu: 'Examples'
+---
+
+import {Playground } from 'docz';
+import { useTrap } from 'react-trap';
+import Box from '../components/Box';
+//import App from '../components/App';
+
+# event
+
+#### You can provide any valid [DOM event](https://developer.mozilla.org/en-US/docs/Web/Events).
+In this case we are using the `mouseover` event which will get triggered by a hover of a pointer device or a `press` on mobile.
+
+```
+import { useTrap } from 'react-trap';
+
+function App(){
+  const [trapped, ref] = useTrap({event: 'click'});
+  return <Box innerRef={ref} isFocused={trapped} />
+}
+```
+
+<Playground >
+  {() => {
+    function App(){
+      const [trapped, ref] = useTrap({event: 'click'});
+      return <Box innerRef={ref} isFocused={trapped} />
+    }
+    return <App/>
+  }
+    
+    }
+</Playground>
