@@ -17,7 +17,7 @@
       }
     ],
     "ordering": "descending",
-    "version": "1.1.0",
+    "version": "2.0.0",
     "repository": "https://github.com/sag1v/react-trap",
     "native": false,
     "codeSandbox": true,
@@ -85,6 +85,28 @@
         }
       ]
     },
+    "mdx/multipleEvents.mdx": {
+      "name": "multiple events",
+      "route": "/multipleEvents",
+      "menu": "Examples",
+      "id": "73c4522299b5eaf989d460c5015441d0",
+      "filepath": "mdx/multipleEvents.mdx",
+      "link": "https://github.com/sag1v/react-trap\\edit\\master\\src\\docs\\mdx/multipleEvents.mdx",
+      "slug": "mdx-multiple-events",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "multiple-events",
+          "value": "multiple events"
+        },
+        {
+          "depth": 4,
+          "slug": "you-can-pass-multiple-events-to-the-event-on-and-off-props-just-pass-a-string-with-events-seperated-by-spaces",
+          "value": "You can pass multiple events to the  event ,  on  and  off  props, just pass a string with events seperated by spaces."
+        }
+      ]
+    },
     "mdx/index.mdx": {
       "name": "Getting started",
       "route": "/",
@@ -124,72 +146,6 @@
           "depth": 2,
           "slug": "how-is-box-looks-like",
           "value": "How is Box looks like?"
-        }
-      ]
-    },
-    "mdx/multipleEvents.mdx": {
-      "name": "multiple events",
-      "route": "/multipleEvents",
-      "menu": "Examples",
-      "id": "73c4522299b5eaf989d460c5015441d0",
-      "filepath": "mdx/multipleEvents.mdx",
-      "link": "https://github.com/sag1v/react-trap\\edit\\master\\src\\docs\\mdx/multipleEvents.mdx",
-      "slug": "mdx-multiple-events",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "multiple-events",
-          "value": "multiple events"
-        },
-        {
-          "depth": 4,
-          "slug": "you-can-pass-multiple-events-to-the-event-on-and-off-props-just-pass-a-string-with-events-seperated-by-spaces",
-          "value": "You can pass multiple events to the  event ,  on  and  off  props, just pass a string with events seperated by spaces."
-        }
-      ]
-    },
-    "mdx/preventDefault.mdx": {
-      "name": "preventDefault",
-      "route": "/preventDefault",
-      "menu": "Examples",
-      "id": "121e63a9c6c09fdb5a74c064e2003a6d",
-      "filepath": "mdx/preventDefault.mdx",
-      "link": "https://github.com/sag1v/react-trap\\edit\\master\\src\\docs\\mdx/preventDefault.mdx",
-      "slug": "mdx-prevent-default",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "preventdefault",
-          "value": "preventDefault"
-        },
-        {
-          "depth": 4,
-          "slug": "you-can-pass-preventdefault-and-prevent-the-default-behaviour-of-the-browser-this-will-prevent-the-default-only-if-the-state-has-changed-this-way-we-are-not-over-taking-other-event-listeners",
-          "value": "You can pass  preventDefault  and prevent the default behaviour of the browser. This will prevent the default only if the state has changed, this way we are not over taking other event listeners"
-        }
-      ]
-    },
-    "mdx/onoffEvents.mdx": {
-      "name": "on & off",
-      "route": "/onoff",
-      "menu": "Examples",
-      "id": "7608ac7618c19ec50004a357c7b4ae6d",
-      "filepath": "mdx/onoffEvents.mdx",
-      "link": "https://github.com/sag1v/react-trap\\edit\\master\\src\\docs\\mdx/onoffEvents.mdx",
-      "slug": "mdx-onoff-events",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "on--off",
-          "value": "on & off"
-        },
-        {
-          "depth": 4,
-          "slug": "you-can-provide-different-events-for-on-and-off-focus-in-this-example-we-will-trigger-the-trap-only-with-the-dblclick-event-and-invert-it-with-the-click-event",
-          "value": "You can provide different events for on and off focus. In this example we will trigger the trap only with the  dblclick  event and invert it with the  click  event."
         }
       ]
     },
@@ -239,6 +195,50 @@
           "depth": 4,
           "slug": "you-can-provide-any-valid-dom-event",
           "value": "You can provide any valid  DOM event ."
+        }
+      ]
+    },
+    "mdx/preventDefault.mdx": {
+      "name": "preventDefault",
+      "route": "/preventDefault",
+      "menu": "Examples",
+      "id": "121e63a9c6c09fdb5a74c064e2003a6d",
+      "filepath": "mdx/preventDefault.mdx",
+      "link": "https://github.com/sag1v/react-trap\\edit\\master\\src\\docs\\mdx/preventDefault.mdx",
+      "slug": "mdx-prevent-default",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "preventdefault",
+          "value": "preventDefault"
+        },
+        {
+          "depth": 4,
+          "slug": "you-can-pass-preventdefault-and-prevent-the-default-behaviour-of-the-browser-this-will-prevent-the-default-only-if-the-state-has-changed-this-way-we-are-not-over-taking-other-event-listeners",
+          "value": "You can pass  preventDefault  and prevent the default behaviour of the browser. This will prevent the default only if the state has changed, this way we are not over taking other event listeners"
+        }
+      ]
+    },
+    "mdx/onoffEvents.mdx": {
+      "name": "on & off",
+      "route": "/onoff",
+      "menu": "Examples",
+      "id": "7608ac7618c19ec50004a357c7b4ae6d",
+      "filepath": "mdx/onoffEvents.mdx",
+      "link": "https://github.com/sag1v/react-trap\\edit\\master\\src\\docs\\mdx/onoffEvents.mdx",
+      "slug": "mdx-onoff-events",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "on--off",
+          "value": "on & off"
+        },
+        {
+          "depth": 4,
+          "slug": "you-can-provide-different-events-for-on-and-off-focus-in-this-example-we-will-trigger-the-trap-only-with-the-dblclick-event-and-invert-it-with-the-click-event",
+          "value": "You can provide different events for on and off focus. In this example we will trigger the trap only with the  dblclick  event and invert it with the  click  event."
         }
       ]
     }
